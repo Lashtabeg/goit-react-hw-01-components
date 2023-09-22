@@ -2,10 +2,13 @@ import { Profile } from "components/user/Profile";
 import user from './user/user.json';
 import { Statistics } from "./statistics/Statistics";
 import data from './statistics/data.json';
+import { FriendsList } from "./friendsList/FiendsList";
+import friends from './friendsList/friends.json';
+import { TransactionHistory } from "./transactions/TransactionHistory";
+import transactions from "./transactions/transactions.json"
 
 
-// import friends from './friendsList/friends.json';
-// import { FriendsList } from "components/friendsList/FiendsList";
+
 
 
 
@@ -18,13 +21,14 @@ export const App = props => {
       location={user.location}
       avatar={user.avatar}
       stats={user.stats} /> </div>
-       <section>
-<Statistics title="Upload stats" stats={data} /></section>
-{/* <div><FriendsList friends={friends }/></div> */}
-   
-    </div>
-    
+      
+      
+<Statistics title="Upload stats" stats={data} />
 
-  );
+<FriendsList friends={friends}/>
+   
+<TransactionHistory items={transactions}/> 
+    </div>
+      );
 };
 

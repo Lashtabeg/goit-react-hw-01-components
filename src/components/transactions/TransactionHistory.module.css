@@ -1,0 +1,25 @@
+.transactioHistory {
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+    border: 2px solid salmon;
+    border-radius: 5px;
+
+}
+
+.tableHead {
+    background-color: blanchedalmond;
+}
+
+.type {
+
+    text-transform: uppercase;
+}
+
+.ta .tableItem:nth-child(2n) {
+    background-color: aquamarine;
+}
+
+.tableItem:nth-child(2n+1) {
+    background-color: rgba(50, 25, 133, 0.611);
+}
